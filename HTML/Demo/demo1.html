@@ -1,29 +1,60 @@
+
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        h1 span {
+            background-color: #ffdaba42;
+        }
+        h1 {
+            color: #00f195;
+            font-family: cursive;
+        }
+        body {
+            margin: 0;
+            background-image: url(./Kuvat/background.jpeg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+
+        @keyframes color-change {
+            0% { color: red; }
+            50% { color: blue; }
+            100% { color: red; }
+        }
+    </style>
     <title>Minä!</title>
 </head>
 <body>
     <header>
-            <h1>Ville Niemi</h1>
+            <h1><span>Ville Niemi</span></h1>
     </header>
     <main>
         <section>
             <header>
-                <h2>Tietoa minusta!</h2>
+                <h2 style="color:crimson">Tietoa minusta!</h2>
             </header>        
-        <p>Olen 31-vuotias tieto- ja viestintätekniikan opiskelija. Mielenkiinnon 
-        kohteitani ovat ohjelmointi, palvelimet, linux-käyttöjärjestelmät ja tietokoneen toimintaperiaatteet 
-        muutenkin.<br>
+
+
+        <p style="background-color: #C96B57; font-size: 32px;">Olen 31-vuotias tieto- ja viestintätekniikan opiskelija. Mielenkiinnon 
+        kohteitani ovat ohjelmointi, palvelimet, linux-käyttöjärjestelmät ja ylipäätään tietokoneen toimintaperiaattteet.<br>
+
         pidän tietoturva-asioista, tykkään harjoitella esimerkiksi
         Kali Linuxilla pentestejä. Muutamat sivut missä näitä harjoittelen ovat 
-        <a href="https://tryhackme.com">TryHackMe</a> ja <a href="https://hackthebox.com">HackTheBox</a>.<p>moi</p><hr></p>
+        <a style="background-color: lawngreen;" href="https://tryhackme.com" target="_blank">TryHackMe</a> ja <a style="background-color: lawngreen;" href="https://hackthebox.com" target="_blank">HackTheBox</a>.</p>
+        <br><br><br> <img src="./Kuvat/mrhackerman.jpg" alt="hackerman" width="300" height="200">
+        <hr>
+         <p style = "font-family: monospace; font-size: 3em; animation: color-change 1s infinite;">Tulossa pian....</p>
         </section>
         </main>
         <footer>
-            <p>Copyright by Ville Niemi 2025!!!</p>
+            <p style="background-color: #C69B76; position: fixed; left: 50%; bottom: 0; transform: translateX(-50%); margin: 0; width: max-content; ">Copyright by Ville Niemi 2025!!!</p>
         </footer>
 </body>
 </html>
