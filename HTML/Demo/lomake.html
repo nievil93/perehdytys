@@ -3,7 +3,20 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   
+    <style>
+        .submit:hover {
+            background-color: greenyellow;
+            cursor: crosshair;
+        }
+        .reset:hover {
+            background-color: red;
+            cursor: crosshair;
+        }
+    </style>
+
     <title>Ohjelmointikurssi</title>
+
 </head>
 <body>
     <header>
@@ -52,8 +65,8 @@
                 <br>
                 <input type="checkbox" name="Aamupala" id="aamupala" value="on">Aamupala?<br>
 
-                <input type="submit" onclick="alert('Kiitos ilmoittautumisesta!')" value="Lähetä!">
-                <input type="reset" onclick="alert('Lomake tyhjennetty!')" value="Tyhjennä lomake"><br>
+                <input type="submit" class="submit" onclick="alert('Kiitos ilmoittautumisesta!')" value="Lähetä!">
+                <input type="reset" class="reset" value="Tyhjennä lomake"><br>
             </form>
         </section>      
 
