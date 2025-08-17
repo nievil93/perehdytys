@@ -1,3 +1,5 @@
 {
-    "workbench.colorTheme": "Monokai Vibrant (Rust)"
+    "workbench.colorTheme": "Monokai Vibrant (Rust)",
+    "editor.autoClosingQuotes": "never",
+    "editor.autoClosingBrackets": "never"
 }

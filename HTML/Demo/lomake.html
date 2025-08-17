@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ohjelmointikurssi</title>
+</head>
+<body>
+    <header>
+        <h1 style="font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;"><u>Ilmoittautuminen</u></h1>
+    </header>
+    <main>
+        <section>   
+            <header>
+                <h2 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;"><strong>Ilmoittautumislomake</strong></h2>
+            </header>
+            <form>
+                <label for="nimi">Nimi: </label>
+                <input id="nimi" name="Nimi" type="text" required><br>
+                
+                <label for="email">Sähköposti: </label> 
+                <input id="email" name="Sähköposti" type="text"><br>
+                
+                <label for="puh">Puhelinnumero(muodossa 0401234567): </label>
+                <input id="puh" name="Puhelinnumero" type="text" maxlength="10" size="8" required><br>
+
+                <label for="päivä">Osallistumisen alkaminen(pv/kk/vuosi): </label>   
+                <input style="width: 30px;" id="päivä" name="päivä" type="number" min="1" max="31" placeholder="pv">
+               
+                <label for="kuukausi"></label>
+                <input style="width: 30px;" id="kuukausi" name="kk" type="number" min="1" max="12" placeholder="kk">
+               
+                <label for="vuosi"></label>
+                <input style="width: 50px;" id="vuosi" name="vuosi" type="number" min="0" max="2025" placeholder="vuosi"><br>
+
+                <label style="font-weight:bold;">Majoitus</label><br>
+                <input name="sijainti" type="radio" value="paikalla majoitus"> Yövyn paikanpäällä<br>
+                <input name="sijainti" type="radio" value="hotellimajoitus"> Yövyn hotellissa/muualla<br>
+                <input name="sijainti" type="radio" value="Ei yövy">Olen päiväkäynnillä<br>
+                
+                <p style="font-family: monospace;">Kirjoita tähän jos sinulla on allergioita</p><br>
+                <textarea name="allergiat" cols="30" rows="5"></textarea>
+                
+                <br><p style="font-family: monospace;">Ruoka-annokset</p>
+                <select name="ruoka-annokset" id="ruoka">
+                    <option value="tyhjä">Valitse ruokalaji</option>
+                    <option value="kasvisruoka">Kasvisruoka</option>
+                    <option value="liharuoka">Liharuoat</option>
+                    <option value="kalainen ruoka">Kalainen ruoka</option>
+                    <option value="erikoisruokavalio">Erikoisruokavalio</option>
+                </select>
+                <br>
+                <input type="checkbox" name="Aamupala" id="aamupala" value="on">Aamupala?<br>
+
+                <input type="submit" onclick="alert('Kiitos ilmoittautumisesta!')" value="Lähetä!">
+                <input type="reset" onclick="alert('Lomake tyhjennetty!')" value="Tyhjennä lomake"><br>
+            </form>
+        </section>      
+
+
+    </main>
+</body>
+</html>
